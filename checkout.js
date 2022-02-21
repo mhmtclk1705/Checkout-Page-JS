@@ -57,7 +57,15 @@ amountMinus.forEach((e) => {
         // console.log(quantity);
         // console.log(productTotalPrice);
         // console.log(productOnePrice);
-    };
+    }
+    else{
+        if(confirm("Ürün silinsin mi") == true){
+            e.parentElement.parentElement.parentElement.parentElement.remove();
+            productPrice();
+        }
+        
+        
+    }
     })
 })
 amountPlus.forEach((e) => {
