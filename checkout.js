@@ -59,7 +59,7 @@ amountMinus.forEach((e) => {
         // console.log(productOnePrice);
     }
     else{
-        if(confirm("Ürün silinsin mi") == true){
+        if(confirm("Do you want to delete the product") == true){
             e.parentElement.parentElement.parentElement.parentElement.remove();
             productPrice();
         }
